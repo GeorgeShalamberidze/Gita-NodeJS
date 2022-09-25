@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> hello html</title>
+    </head>
+    <body>
+        <script>
+            print = function(msg){
+                console.log(msg)
+            }
+            secoundCounter= function(caller,count){
+                for(let i=0; i<count; i++){
+                    setTimeout(() => {
+                        print(caller +" "+ i +" seconds over");
+                    }, i * 1000)
+                }
+            }
+        </script>
+        <form>
+            <!-- <input type="button" value="B1" onclick="secoundCounter('B1', 20)"/><br/><br/>
+            <input type="button" value="B2" onclick="secoundCounter('B2',30)" /><br/><br/> -->
+        </form>
+
+    </body>
+</html>
